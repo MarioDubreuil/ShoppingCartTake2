@@ -1,4 +1,6 @@
-namespace ShoppingCartTake2;
+using ShoppingCart.ShoppingCart;
+
+namespace ShoppingCart;
 
 public static class Program
 {
@@ -9,6 +11,9 @@ public static class Program
         // Add services to the container.
 
         builder.Services.AddControllers();
+        
+        builder.Services.AddSingleton<IShoppingCartStore, ShoppingCartStore>();
+        
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();

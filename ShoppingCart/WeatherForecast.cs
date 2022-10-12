@@ -1,4 +1,4 @@
-namespace ShoppingCartTake2;
+namespace ShoppingCart;
 
 public class WeatherForecast
 {
